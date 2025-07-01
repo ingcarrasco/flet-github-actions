@@ -1,0 +1,8 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  flet-app:
+    image: tuusuario/flet-app:latest
+    ports:
+      - "8500:8500"
+    restart: unless-stopped
